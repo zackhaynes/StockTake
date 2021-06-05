@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserManagementMenu">
+
+    <Button
+        android:id="@+id/buttonDeleteUserActivity"
+        android:layout_width="226dp"
+        android:layout_height="93dp"
+        android:text="@string/delete_user"
+        app:backgroundTint="#454545"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLogoutUser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAddUserActivity" />
+
+    <Button
+        android:id="@+id/buttonLogoutUser"
+        android:layout_width="116dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="25dp"
+        android:text="@string/logout"
+        app:backgroundTint="#454545"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonAddUserActivity"
+        android:layout_width="226dp"
+        android:layout_height="93dp"
+        android:text="@string/add_user"
+        app:backgroundTint="#454545"
+        app:layout_constraintBottom_toTopOf="@+id/buttonDeleteUserActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonViewUsersActivity" />
+
+    <Button
+        android:id="@+id/buttonViewUsersActivity"
+        android:layout_width="226dp"
+        android:layout_height="93dp"
+        android:text="@string/view_user"
+        app:backgroundTint="#454545"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAddUserActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddUserActivity">
+
+    <EditText
+        android:id="@+id/editTextAddUserUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/textViewAddUsersername"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextAddUserPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/editTextAddUserUsername"
+        app:layout_constraintStart_toStartOf="@+id/editTextAddUserUsername"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAddUserUsername" />
+
+    <TextView
+        android:id="@+id/textViewAddUsersername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:text="@string/user"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editTextAddUserUsername"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewAddUserPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/password"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editTextAddUserPassword"
+        app:layout_constraintEnd_toEndOf="@+id/textViewAddUsersername" />
+
+    <TextView
+        android:id="@+id/textViewAddUserPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_phone"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editTextPhone"
+        app:layout_constraintEnd_toEndOf="@+id/textViewAddUsersername" />
+
+    <TextView
+        android:id="@+id/textViewAddUserAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_address"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editTextAddress"
+        app:layout_constraintEnd_toEndOf="@+id/textViewAddUsersername" />
+
+    <TextView
+        android:id="@+id/textViewAddUserID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_id"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editTextEmployeeID"
+        app:layout_constraintEnd_toEndOf="@+id/textViewAddUsersername" />
+
+    <TextView
+        android:id="@+id/textViewAddUserDOB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_dob"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editTextDay"
+        app:layout_constraintEnd_toEndOf="@+id/textViewAddUsersername" />
+
+    <Button
+        android:id="@+id/buttonAddUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/add_user"
+        app:backgroundTint="#454545"
+        app:layout_constraintEnd_toEndOf="@+id/editTextAddUserPassword"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/editTextAddUserPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDay" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="@+id/editTextAddUserUsername"
+        app:layout_constraintStart_toStartOf="@+id/editTextAddUserUsername"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAddUserPassword" />
+
+    <EditText
+        android:id="@+id/editTextAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="textPostalAddress"
+        app:layout_constraintEnd_toEndOf="@+id/editTextAddUserUsername"
+        app:layout_constraintStart_toStartOf="@+id/editTextAddUserUsername"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+
+    <EditText
+        android:id="@+id/editTextEmployeeID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/editTextAddUserUsername"
+        app:layout_constraintStart_toStartOf="@+id/editTextAddUserUsername"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAddress" />
+
+    <EditText
+        android:id="@+id/editTextDay"
+        android:layout_width="54dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="2"
+        app:layout_constraintEnd_toStartOf="@+id/editTextMonth"
+        app:layout_constraintStart_toStartOf="@+id/editTextEmployeeID"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDay" />
+
+    <EditText
+        android:id="@+id/editTextYear"
+        android:layout_width="84dp"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="4"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextDay"
+        app:layout_constraintEnd_toEndOf="@+id/editTextEmployeeID"
+        app:layout_constraintStart_toEndOf="@+id/editTextMonth"
+        app:layout_constraintTop_toTopOf="@+id/editTextDay" />
+
+    <EditText
+        android:id="@+id/editTextMonth"
+        android:layout_width="54dp"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="2"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextDay"
+        app:layout_constraintEnd_toStartOf="@+id/editTextYear"
+        app:layout_constraintStart_toEndOf="@+id/editTextDay"
+        app:layout_constraintTop_toTopOf="@+id/editTextDay" />
+
+    <TextView
+        android:id="@+id/textViewDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/day"
+        app:layout_constraintEnd_toEndOf="@+id/editTextDay"
+        app:layout_constraintStart_toStartOf="@+id/editTextDay"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmployeeID" />
+
+    <TextView
+        android:id="@+id/textViewMonth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/month"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewDay"
+        app:layout_constraintEnd_toEndOf="@+id/editTextMonth"
+        app:layout_constraintStart_toStartOf="@+id/editTextMonth" />
+
+    <TextView
+        android:id="@+id/textViewYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/year"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewDay"
+        app:layout_constraintEnd_toEndOf="@+id/editTextYear"
+        app:layout_constraintStart_toStartOf="@+id/editTextYear" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

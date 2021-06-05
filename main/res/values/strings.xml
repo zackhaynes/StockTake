@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name"></string>
+
+    // Main Activity
+    <string name="user">Username</string>
+    <string name="password">Password</string>
+    <string name="login_successful">Login successful</string>
+    <string name="login_failed">Username or password was incorrect</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="text_box_error_message">Error please make sure all text boxes are filled</string>
+
+
+    // User Management Activity
+    <string name="add_user">Add User</string>
+    <string name="view_user">View User</string>
+    <string name="delete_user">Delete User</string>
+
+    // Add User Activity
+    <string name="user_added_message">User added successfully</string>
+    <string name="id_found">ERROR: ID already exists</string>
+    <string name="username_found">ERROR: Username already exists</string>
+    <string name="dob_format">Please enter date in format dd/mm/yyyy</string>
+    <string name="valid_date">Please enter a valid date</string>
+    <string name="day">Day</string>
+    <string name="month">Month</string>
+    <string name="year">Year</string>
+
+    <string name="add_username">Username:</string>
+    <string name="add_password">Password:</string>
+    <string name="add_phone">Phone Number:</string>
+    <string name="add_address">Address:</string>
+    <string name="add_dob">Date of Birth:</string>
+    <string name="add_id">Employee ID:</string>
+
+    // Delete User Activity
+    <string name="delete_user_message">Please enter the username of the user you would like to delete</string>
+    <string name="user_not_found">No user matching the username was found in the database</string>
+    <string name="user_deleted">User was deleted successfully</string>
+
+    // View User Activity
+    <string name="view_employee">Employee ID: %1$s</string>
+    <string name="view_username">Username: %1$s</string>
+    <string name="view_password">Password: %1$s</string>
+    <string name="view_phone">Phone Number: %1$s</string>
+    <string name="view_address">Address: %1$s</string>
+    <string name="view_dob">Date of Birth: %1$s</string>
+
+    // Inventory Management Activity
+    <string name="inventory_status">Inventory Status</string>
+    <string name="add_item">Add Item</string>
+    <string name="clear_items">Clear Items</string>
+    <string name="test_items">Test Items</string>1
+
+    <string name="clear_all">Do you want to clear all items?</string>
+    <string name="add_items">Do you want to add 20 test items?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="confirm">Confirm</string>
+    <string name="delete">Delete</string>
+
+    // Add Item Activity
+    <string name="product_name">Product Name</string>
+    <string name="product_type">Product Type</string>
+    <string name="product_quantity">Product Quantity</string>
+    <string name="product_added">Product has been added</string>
+
+    // Inventory Status Activity
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+
+    <string name="product_display">%1$s : %2$s : %3$s "\n"</string>
+
+
+</resources>
